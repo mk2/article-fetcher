@@ -3,9 +3,9 @@ description: Fetch articles from Zenn and Qiita.
 author: mk2@mk2.red
 inputs:
   zenn:
-    description: Accounts of Zenn for fetching articles.
+    description: (JSON Array format) Accounts of Zenn for fetching articles.
   qiita:
-    description: Accounts of Qiita for fetching articles.
+    description: (JSON Array format) Accounts of Qiita for fetching articles.
   retentionDays:
     description: retention days
     default: 1

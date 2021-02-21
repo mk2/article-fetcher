@@ -16,11 +16,11 @@ jobs:
           yarn install --immutable --immutable-cache
       - run: |
           yarn all
-          
+
   test: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          milliseconds: 1000
+          zenn: '[{"id": "mk2", "name":"朝倉"}]'
