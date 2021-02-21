@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@actions/artifact", "npm:0.5.0"],
             ["@actions/core", "npm:1.2.6"],
             ["@types/jest", "npm:26.0.20"],
             ["@types/node", "npm:14.14.31"],
@@ -60,11 +61,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["@actions/artifact", [
+        ["npm:0.5.0", {
+          "packageLocation": "./.yarn/cache/@actions-artifact-npm-0.5.0-71beea376f-eb0324c246.zip/node_modules/@actions/artifact/",
+          "packageDependencies": [
+            ["@actions/artifact", "npm:0.5.0"],
+            ["@actions/core", "npm:1.2.6"],
+            ["@actions/http-client", "npm:1.0.9"],
+            ["@types/tmp", "npm:0.1.0"],
+            ["tmp", "npm:0.1.0"],
+            ["tmp-promise", "npm:2.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@actions/core", [
         ["npm:1.2.6", {
           "packageLocation": "./.yarn/cache/@actions-core-npm-1.2.6-f205abe96a-984c7d5ae9.zip/node_modules/@actions/core/",
           "packageDependencies": [
             ["@actions/core", "npm:1.2.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@actions/http-client", [
+        ["npm:1.0.9", {
+          "packageLocation": "./.yarn/cache/@actions-http-client-npm-1.0.9-8e9ed0b64c-f6d3947c09.zip/node_modules/@actions/http-client/",
+          "packageDependencies": [
+            ["@actions/http-client", "npm:1.0.9"],
+            ["tunnel", "npm:0.0.6"]
           ],
           "linkType": "HARD",
         }]
@@ -1057,6 +1082,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-stack-utils-npm-2.0.0-8ded8461bc-662312302e.zip/node_modules/@types/stack-utils/",
           "packageDependencies": [
             ["@types/stack-utils", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/tmp", [
+        ["npm:0.1.0", {
+          "packageLocation": "./.yarn/cache/@types-tmp-npm-0.1.0-2b1dac0b33-a8d1c45cea.zip/node_modules/@types/tmp/",
+          "packageDependencies": [
+            ["@types/tmp", "npm:0.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -6124,6 +6158,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["rimraf", [
+        ["npm:2.7.1", {
+          "packageLocation": "./.yarn/cache/rimraf-npm-2.7.1-9a71f3cc37-059efac283.zip/node_modules/rimraf/",
+          "packageDependencies": [
+            ["rimraf", "npm:2.7.1"],
+            ["glob", "npm:7.1.6"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.2", {
           "packageLocation": "./.yarn/cache/rimraf-npm-3.0.2-2cb7dac69a-f0de3e4455.zip/node_modules/rimraf/",
           "packageDependencies": [
@@ -6805,6 +6847,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["tmp", [
+        ["npm:0.1.0", {
+          "packageLocation": "./.yarn/cache/tmp-npm-0.1.0-fa18ef19c4-b505e9f4f5.zip/node_modules/tmp/",
+          "packageDependencies": [
+            ["tmp", "npm:0.1.0"],
+            ["rimraf", "npm:2.7.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["tmp-promise", [
+        ["npm:2.1.1", {
+          "packageLocation": "./.yarn/cache/tmp-promise-npm-2.1.1-e6c9297d0f-795d20c8c6.zip/node_modules/tmp-promise/",
+          "packageDependencies": [
+            ["tmp-promise", "npm:2.1.1"],
+            ["tmp", "npm:0.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["tmpl", [
         ["npm:1.0.4", {
           "packageLocation": "./.yarn/cache/tmpl-npm-1.0.4-35b37c2875-44de07fb81.zip/node_modules/tmpl/",
@@ -6991,6 +7053,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["tunnel", [
+        ["npm:0.0.6", {
+          "packageLocation": "./.yarn/cache/tunnel-npm-0.0.6-b1c0830ea4-78fbb1a55a.zip/node_modules/tunnel/",
+          "packageDependencies": [
+            ["tunnel", "npm:0.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["tunnel-agent", [
         ["npm:0.6.0", {
           "packageLocation": "./.yarn/cache/tunnel-agent-npm-0.6.0-64345ab7eb-03db75a4f9.zip/node_modules/tunnel-agent/",
@@ -7084,6 +7155,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["typescript-action", "workspace:."],
+            ["@actions/artifact", "npm:0.5.0"],
             ["@actions/core", "npm:1.2.6"],
             ["@types/jest", "npm:26.0.20"],
             ["@types/node", "npm:14.14.31"],
