@@ -1,11 +1,25 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: Article Fetcher
+description: Fetch articles from Zenn and Qiita.
+author: mk2@mk2.red
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  zenn:
+    description: '(JSON array) Accounts of Zenn. ex: [ { "id": "mk2", "name": "朝倉(zenn)" }, { "id": "zenn", "name": "zenn(公式)" } ]'
+  qiita:
+    description: '(JSON array) Accounts of Qiita. ex: [ { "id": "mk2", "name": "朝倉(qiita)" }, { "id": "Qiita", "name": "Qiita(公式)" } ]'
+  qiitaAccessToken:
+    description: '(string) Token for Qiita API access. If missing it, requests not authorized.'
+  fromDaysAgo:
+    description: '(number) Extract articles from a specified period.'
+    default: 1
+  retentionDays:
+    description: '(number) Period for articles artifact holding.'
+    default: 1
+  artifactName:
+    description: '(string) Articles artifact name.'
+    default: articles
+  outputJsonFileName:
+    description: '(string) Articles output file name.'
+    default: articles.json
 runs:
   using: 'node12'
   main: 'dist/index.js'

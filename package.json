@@ -10,8 +10,10 @@
     "format-check": "prettier --check **/*.ts",
     "lint": "eslint src/**/*.ts",
     "package": "ncc build --source-map --license licenses.txt",
-    "test": "jest",
-    "all": "npm run build && npm run format && npm run lint && npm run package && npm test"
+    "clean": "rimraf lib",
+    "re-package": "yarn clean && yarn build && yarn package",
+    "test": "jest --runInBand",
+    "all": "yarn build && yarn format && yarn lint && yarn package && yarn test"
   },
   "repository": {
     "type": "git",
@@ -25,21 +27,40 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.6"
+    "@actions/artifact": "^0.5.0",
+    "@actions/core": "^1.2.6",
+    "ansi-colors": "^4.1.1",
+    "fast-xml-parser": "^3.18.0",
+    "luxon": "^1.26.0",
+    "node-fetch": "^2.6.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-nested-error": "^1.2.1"
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",
+    "@types/luxon": "^1.26.0",
     "@types/node": "^14.14.9",
+    "@types/node-fetch": "^2.5.8",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.8.1",
     "@vercel/ncc": "^0.25.1",
     "eslint": "^7.17.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-import-resolver-node": "^0.3.4",
+    "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-github": "^4.1.1",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "jest": "^26.6.3",
     "jest-circus": "^26.6.3",
     "js-yaml": "^3.14.0",
+    "mockttp": "^1.2.0",
     "prettier": "2.2.1",
+    "rimraf": "^3.0.2",
     "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "type-fest": "^0.21.1",
     "typescript": "^4.1.3"
   }
 }

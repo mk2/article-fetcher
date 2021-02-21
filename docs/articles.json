@@ -1,0 +1,20 @@
+[
+  {
+    "where": "zenn.dev",
+    "authorId": "mk2",
+    "authorName": "朝倉(zenn)",
+    "publishDate": "2021-02-21T11:58:44.000+00:00",
+    "title": "Yarn v2で始めてみるzenn-cliライフ",
+    "url": "https://zenn.dev/mk2/articles/d0c3df3b6a3b889cca8c",
+    "summary": "zennで記事を公開するにあたり、Github連携でやってみようと思っていました。今回それを設定にするにあたり、zenn-cli w/Yarn v2でリポジトリを作ってみたので共有します（大したことはやってないです）。\n\n リポジトリの作成・zennへの連携\n\nGitHubリポジトリでZennのコンテンツを管理する\n\n上記を参考に、リポジトリをGithubで作成しzennに連携します。\n\n リポジトリの初期化\n\nZenn CLIをインストールする\n\nここを参考に、良い感じにyarn v2に読み替えながらやっていきます。\n\n 1. まずYarn v2の有効化。\n\n      \n      ..."
+  },
+  {
+    "where": "qiita.com",
+    "authorId": "mk2",
+    "authorName": "朝倉(qiita)",
+    "publishDate": "2021-02-20T13:33:20.000+00:00",
+    "title": "GCP Associate Cloud Engineer 試験振り返り",
+    "url": "https://qiita.com/mk2/items/4974249749b9d506c316",
+    "summary": "先日[GCP Associate Cloud Engineer](https://cloud.google.com/certification/cloud-engineer?hl=ja)試験に合格したので、その振り返りをします。\n\n# 前置き\n\n- AWS SAAは2年くらい前に取得\n- 普段のお仕事はReact Nativeを使ったアプリの開発、AWSのLambdaを使ったAPI開発\n- なので、GCPを業務で使った経験はゼロです\n- 試験準備期間はだいたい2ヶ月程だと思います（勉強時間は、平均して平日は1時間ほど、休日は土日合わせて6時間ぐらいかな）\n\n# やった教材＆それぞれの評価\n\n僕 ..."
+  }
+]

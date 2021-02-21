@@ -2,10 +2,12 @@ module.exports = {
   clearMocks: true,
   moduleFileExtensions: ['js', 'ts'],
   testEnvironment: 'node',
-  testMatch: ['**/*.test.ts'],
+  testMatch: ['**/__tests__/**/*.test.ts'],
   testRunner: 'jest-circus/runner',
   transform: {
     '^.+\\.ts$': 'ts-jest'
   },
-  verbose: true
+  rootDir: './src',
+  verbose: true,
+  setupFilesAfterEnv: ["./setupTest.ts"],
 }

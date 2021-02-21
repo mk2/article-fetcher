@@ -1,0 +1,47 @@
+name: test-and-demo
+on: # rebuild any PRs and main branch changes
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'releases/*'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          yarn set version berry
+          yarn install --immutable --immutable-cache
+      - run: |
+          yarn all
+
+  demo-fetch-articles:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: zenn/qiitaのユーザーIDリストの設定
+        id: id-list-json
+        run: |
+          zenn=$(echo $(cat ./docs/zenn.json))
+          echo "::set-output name=zenn::$zenn"
+          qiita=$(echo $(cat ./docs/qiita.json))
+          echo "::set-output name=qiita::$qiita"
+      - uses: ./
+        with:
+          zenn: ${{ steps.id-list-json.outputs.zenn }}
+          qiita: ${{ steps.id-list-json.outputs.qiita }}
+          qiitaAccessToken: ${{ secrets.QIITA_ACCESS_TOKEN }}
+          fromDaysAgo: 30
+
+  demo-use-result:
+    needs: demo-fetch-articles
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: articles
+          path: .
+      - run: |
+          node -e "const {spawnSync}=require('child_process');const url='https://idobata.io/hook/custom/844d3335-68f4-445f-ba22-7b70d7746319';console.log(url);const json=JSON.parse(require('fs').readFileSync('./articles.json'));json.forEach(a => spawnSync('curl',['--data-urlencode','source='+a.title,url]));"
