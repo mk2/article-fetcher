@@ -1,11 +1,14 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: Article Fetcher
+description: Fetch articles from Zenn and Qiita.
+author: mk2@mk2.red
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  zenn:
+    description: Accounts of Zenn for fetching articles.
+  qiita:
+    description: Accounts of Qiita for fetching articles.
+  retentionDays:
+    description: retention days
+    default: 1
 runs:
   using: 'node12'
   main: 'dist/index.js'

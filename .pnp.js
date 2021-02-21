@@ -44,12 +44,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:4.15.1"],
             ["@vercel/ncc", "npm:0.25.1"],
             ["eslint", "npm:7.20.0"],
+            ["eslint-config-prettier", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:8.0.0"],
             ["eslint-import-resolver-node", "npm:0.3.4"],
             ["eslint-plugin-eslint-comments", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:3.2.0"],
             ["eslint-plugin-github", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:4.1.1"],
             ["eslint-plugin-import", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:2.22.1"],
             ["eslint-plugin-jest", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:24.1.5"],
-            ["eslint-plugin-prettier", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:3.3.1"],
             ["jest", "npm:26.6.3"],
             ["jest-circus", "npm:26.6.3"],
             ["js-yaml", "npm:3.14.1"],
@@ -2641,10 +2641,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:a4c42f134013429e191ada3a756950461f49b88bf02cb25d2e12652791ec2a0b21ffc5402579f876568b5b529bed94b9d69d6d988657a041a51cc3ddbc044ea8#npm:8.0.0", {
-          "packageLocation": "./.yarn/$$virtual/eslint-config-prettier-virtual-0a50dd7b0d/0/cache/eslint-config-prettier-npm-8.0.0-d8e087975e-4f7eb2885a.zip/node_modules/eslint-config-prettier/",
+        ["virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:8.0.0", {
+          "packageLocation": "./.yarn/$$virtual/eslint-config-prettier-virtual-0bc689673b/0/cache/eslint-config-prettier-npm-8.0.0-d8e087975e-4f7eb2885a.zip/node_modules/eslint-config-prettier/",
           "packageDependencies": [
-            ["eslint-config-prettier", "virtual:a4c42f134013429e191ada3a756950461f49b88bf02cb25d2e12652791ec2a0b21ffc5402579f876568b5b529bed94b9d69d6d988657a041a51cc3ddbc044ea8#npm:8.0.0"],
+            ["eslint-config-prettier", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:8.0.0"],
             ["@types/eslint", null],
             ["eslint", "npm:7.20.0"]
           ],
@@ -2717,7 +2717,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:a4c42f134013429e191ada3a756950461f49b88bf02cb25d2e12652791ec2a0b21ffc5402579f876568b5b529bed94b9d69d6d988657a041a51cc3ddbc044ea8#npm:4.15.1"],
             ["@typescript-eslint/parser", "virtual:a4c42f134013429e191ada3a756950461f49b88bf02cb25d2e12652791ec2a0b21ffc5402579f876568b5b529bed94b9d69d6d988657a041a51cc3ddbc044ea8#npm:4.15.1"],
             ["eslint", "npm:7.20.0"],
-            ["eslint-config-prettier", "virtual:a4c42f134013429e191ada3a756950461f49b88bf02cb25d2e12652791ec2a0b21ffc5402579f876568b5b529bed94b9d69d6d988657a041a51cc3ddbc044ea8#npm:8.0.0"],
+            ["eslint-config-prettier", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:8.0.0"],
             ["eslint-plugin-eslint-comments", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:3.2.0"],
             ["eslint-plugin-import", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:2.22.1"],
             ["eslint-plugin-prettier", "virtual:a4c42f134013429e191ada3a756950461f49b88bf02cb25d2e12652791ec2a0b21ffc5402579f876568b5b529bed94b9d69d6d988657a041a51cc3ddbc044ea8#npm:3.3.1"],
@@ -2798,26 +2798,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:3.3.1", {
-          "packageLocation": "./.yarn/$$virtual/eslint-plugin-prettier-virtual-8edf72c1ad/0/cache/eslint-plugin-prettier-npm-3.3.1-18ce6f16c1-cf35b0f0e9.zip/node_modules/eslint-plugin-prettier/",
-          "packageDependencies": [
-            ["eslint-plugin-prettier", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:3.3.1"],
-            ["@types/eslint", null],
-            ["@types/prettier", null],
-            ["eslint", "npm:7.20.0"],
-            ["eslint-config-prettier", null],
-            ["prettier", "npm:2.2.1"],
-            ["prettier-linter-helpers", "npm:1.0.0"]
-          ],
-          "packagePeers": [
-            "@types/eslint",
-            "@types/prettier",
-            "eslint-config-prettier",
-            "eslint",
-            "prettier"
-          ],
-          "linkType": "HARD",
-        }],
         ["virtual:a4c42f134013429e191ada3a756950461f49b88bf02cb25d2e12652791ec2a0b21ffc5402579f876568b5b529bed94b9d69d6d988657a041a51cc3ddbc044ea8#npm:3.3.1", {
           "packageLocation": "./.yarn/$$virtual/eslint-plugin-prettier-virtual-c4a8645d97/0/cache/eslint-plugin-prettier-npm-3.3.1-18ce6f16c1-cf35b0f0e9.zip/node_modules/eslint-plugin-prettier/",
           "packageDependencies": [
@@ -2825,7 +2805,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", null],
             ["@types/prettier", null],
             ["eslint", "npm:7.20.0"],
-            ["eslint-config-prettier", "virtual:a4c42f134013429e191ada3a756950461f49b88bf02cb25d2e12652791ec2a0b21ffc5402579f876568b5b529bed94b9d69d6d988657a041a51cc3ddbc044ea8#npm:8.0.0"],
+            ["eslint-config-prettier", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:8.0.0"],
             ["prettier", "npm:2.2.1"],
             ["prettier-linter-helpers", "npm:1.0.0"]
           ],
@@ -7111,12 +7091,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:4.15.1"],
             ["@vercel/ncc", "npm:0.25.1"],
             ["eslint", "npm:7.20.0"],
+            ["eslint-config-prettier", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:8.0.0"],
             ["eslint-import-resolver-node", "npm:0.3.4"],
             ["eslint-plugin-eslint-comments", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:3.2.0"],
             ["eslint-plugin-github", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:4.1.1"],
             ["eslint-plugin-import", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:2.22.1"],
             ["eslint-plugin-jest", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:24.1.5"],
-            ["eslint-plugin-prettier", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:3.3.1"],
             ["jest", "npm:26.6.3"],
             ["jest-circus", "npm:26.6.3"],
             ["js-yaml", "npm:3.14.1"],
