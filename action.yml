@@ -9,6 +9,8 @@ inputs:
   retentionDays:
     description: retention days
     default: 1
+  qiitaToken:
+    description: (String) Token for Qiita API access.
 runs:
   using: 'node12'
   main: 'dist/index.js'
