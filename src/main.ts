@@ -29,6 +29,7 @@ async function run(): Promise<void> {
     try {
       result = result.concat(await fetcher(from, to));
     } catch (e) {
+      logger.error(e);
       errors.push(new NestedError(fetcher.name), e);
     }
   }
@@ -42,6 +43,7 @@ async function run(): Promise<void> {
     await fs.promises.writeFile(inputs.outputJsonFileName, JSON.stringify(result, null, 2));
     await github.uploadArtifact(inputs.artifactName, inputs.outputJsonFileName, inputs.retentionDays);
   } catch (e) {
+    logger.error(e);
     github.actionFailed(new NestedError('failed creating artifact', e));
   }
 }
@@ -52,6 +54,7 @@ async function start(): Promise<void> {
     await run();
     logger.info('Finish article-fetcher successfully.');
   } catch (e) {
+    logger.error(e);
     github.actionFailed(e);
   }
 }

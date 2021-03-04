@@ -20297,6 +20297,9 @@ class Logger {
     info(message) {
         github.infoLog(message, `INFO [${luxon_1.DateTime.utc().toFormat(DateTimeFormat)}]`);
     }
+    error(message) {
+        github.errorLog(message, `ERROR [${luxon_1.DateTime.utc().toFormat(DateTimeFormat)}]`);
+    }
 }
 exports.Logger = Logger;
 exports.logger = new Logger();
@@ -20364,6 +20367,7 @@ function run() {
                 result = result.concat(yield fetcher(from, to));
             }
             catch (e) {
+                logger_1.logger.error(e);
                 errors.push(new ts_nested_error_1.NestedError(fetcher.name), e);
             }
         }
@@ -20376,6 +20380,7 @@ function run() {
             yield github.uploadArtifact(inputs.artifactName, inputs.outputJsonFileName, inputs.retentionDays);
         }
         catch (e) {
+            logger_1.logger.error(e);
             github.actionFailed(new ts_nested_error_1.NestedError('failed creating artifact', e));
         }
     });
@@ -20388,6 +20393,7 @@ function start() {
             logger_1.logger.info('Finish article-fetcher successfully.');
         }
         catch (e) {
+            logger_1.logger.error(e);
             github.actionFailed(e);
         }
     });
