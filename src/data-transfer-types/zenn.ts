@@ -15,7 +15,7 @@ export const ZennArticle = {
   from(article: RawZennArticle): ZennArticle {
     return {
       ...article,
-      pubDate: DateTime.fromHTTP(article.pubDate),
+      pubDate: DateTime.fromHTTP(article.pubDate).setZone('utc'),
     };
   },
 };

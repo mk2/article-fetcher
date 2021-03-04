@@ -21,8 +21,8 @@ export const QiitaArticle = {
   from(article: RawQiitaArticle): QiitaArticle {
     return {
       ...article,
-      created_at: DateTime.fromISO(article.created_at),
-      updated_at: DateTime.fromISO(article.updated_at),
+      created_at: DateTime.fromISO(article.created_at).setZone('utc'),
+      updated_at: DateTime.fromISO(article.updated_at).setZone('utc'),
     };
   },
 };

@@ -46,19 +46,31 @@ import fetch from 'node-fetch';
 
 import { zennRssUrl } from '../config';
 import { RawZennArticle, ZennArticle } from '../data-transfer-types';
+import { logger } from '../logger';
 
 export async function fetchArticles(userId: string): Promise<ZennArticle[]> {
-  const response = await fetch(zennRssUrl(userId));
-  if (response.status !== 200) {
+  try {
+    const response = await fetch(zennRssUrl(userId));
+    if (response.status !== 200) {
+      return [];
+    }
+
+    const result = await response.text();
+    if (!parser.validate(result)) {
+      return [];
+    }
+
+    const xml = parser.parse(result);
+
+    if (!xml.rss.channel.item) {
+      logger.info(`User (${userId}) has no zenn artiles.`);
+      return [];
+    }
+
+    const items: RawZennArticle[] = [xml.rss.channel.item].flat();
+    return items.map(article => ZennArticle.from(article));
+  } catch (e) {
+    logger.error(`Error at zenn fetching: ${JSON.stringify(e)}`);
     return [];
   }
-
-  const result = await response.text();
-  if (!parser.validate(result)) {
-    return [];
-  }
-
-  const xml = parser.parse(result);
-  const items: RawZennArticle[] = [xml.rss.channel.item].flat();
-  return items.map(article => ZennArticle.from(article));
 }

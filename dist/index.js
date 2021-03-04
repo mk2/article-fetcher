@@ -19832,16 +19832,23 @@ exports.fetchArticles = void 0;
 const node_fetch_1 = __importDefault(__webpack_require__(287));
 const config_1 = __webpack_require__(1834);
 const data_transfer_types_1 = __webpack_require__(5587);
+const logger_1 = __webpack_require__(7915);
 function fetchArticles(userName, qiitaAccessToken) {
     return __awaiter(this, void 0, void 0, function* () {
-        const response = yield node_fetch_1.default(config_1.qiitaApiUrl(userName), {
-            headers: Object.assign({ 'content-type': 'application/json', charset: 'utf-8' }, (qiitaAccessToken ? { Authorization: `Bearer ${qiitaAccessToken}` } : undefined)),
-        });
-        if (response.status !== 200) {
+        try {
+            const response = yield node_fetch_1.default(config_1.qiitaApiUrl(userName), {
+                headers: Object.assign({ 'content-type': 'application/json', charset: 'utf-8' }, (qiitaAccessToken ? { Authorization: `Bearer ${qiitaAccessToken}` } : undefined)),
+            });
+            if (response.status !== 200) {
+                return [];
+            }
+            const result = yield response.json();
+            return result.map(article => data_transfer_types_1.QiitaArticle.from(article));
+        }
+        catch (e) {
+            logger_1.logger.error(`Error at qiita fetching: ${JSON.stringify(e)}`);
             return [];
         }
-        const result = yield response.json();
-        return result.map(article => data_transfer_types_1.QiitaArticle.from(article));
     });
 }
 exports.fetchArticles = fetchArticles;
@@ -19914,19 +19921,30 @@ const fast_xml_parser_1 = __importDefault(__webpack_require__(9479));
 const node_fetch_1 = __importDefault(__webpack_require__(287));
 const config_1 = __webpack_require__(1834);
 const data_transfer_types_1 = __webpack_require__(5587);
+const logger_1 = __webpack_require__(7915);
 function fetchArticles(userId) {
     return __awaiter(this, void 0, void 0, function* () {
-        const response = yield node_fetch_1.default(config_1.zennRssUrl(userId));
-        if (response.status !== 200) {
+        try {
+            const response = yield node_fetch_1.default(config_1.zennRssUrl(userId));
+            if (response.status !== 200) {
+                return [];
+            }
+            const result = yield response.text();
+            if (!fast_xml_parser_1.default.validate(result)) {
+                return [];
+            }
+            const xml = fast_xml_parser_1.default.parse(result);
+            if (!xml.rss.channel.item) {
+                logger_1.logger.info(`User (${userId}) has no zenn artiles.`);
+                return [];
+            }
+            const items = [xml.rss.channel.item].flat();
+            return items.map(article => data_transfer_types_1.ZennArticle.from(article));
+        }
+        catch (e) {
+            logger_1.logger.error(`Error at zenn fetching: ${JSON.stringify(e)}`);
             return [];
         }
-        const result = yield response.text();
-        if (!fast_xml_parser_1.default.validate(result)) {
-            return [];
-        }
-        const xml = fast_xml_parser_1.default.parse(result);
-        const items = [xml.rss.channel.item].flat();
-        return items.map(article => data_transfer_types_1.ZennArticle.from(article));
     });
 }
 exports.fetchArticles = fetchArticles;
@@ -20064,7 +20082,7 @@ exports.QiitaArticle = void 0;
 const luxon_1 = __webpack_require__(9711);
 exports.QiitaArticle = {
     from(article) {
-        return Object.assign(Object.assign({}, article), { created_at: luxon_1.DateTime.fromISO(article.created_at), updated_at: luxon_1.DateTime.fromISO(article.updated_at) });
+        return Object.assign(Object.assign({}, article), { created_at: luxon_1.DateTime.fromISO(article.created_at).setZone('utc'), updated_at: luxon_1.DateTime.fromISO(article.updated_at).setZone('utc') });
     },
 };
 
@@ -20081,7 +20099,7 @@ exports.ZennArticle = void 0;
 const luxon_1 = __webpack_require__(9711);
 exports.ZennArticle = {
     from(article) {
-        return Object.assign(Object.assign({}, article), { pubDate: luxon_1.DateTime.fromHTTP(article.pubDate) });
+        return Object.assign(Object.assign({}, article), { pubDate: luxon_1.DateTime.fromHTTP(article.pubDate).setZone('utc') });
     },
 };
 
