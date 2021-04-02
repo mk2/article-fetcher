@@ -5,7 +5,7 @@ __metadata:
   version: 4
   cacheKey: 7
 
-"@actions/artifact@npm:^0.5.0":
+"@actions/artifact@npm:0.5.0":
   version: 0.5.0
   resolution: "@actions/artifact@npm:0.5.0"
   dependencies:
@@ -18,7 +18,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@actions/core@npm:^1.2.6":
+"@actions/core@npm:1.2.6, @actions/core@npm:^1.2.6":
   version: 1.2.6
   resolution: "@actions/core@npm:1.2.6"
   checksum: 984c7d5ae95c02f62f69549a9d5cfbc0db0b035f519775301b397c167791ceee269fb504cb622da541d1fa305ee4ad3fc30d017c6407045aa4eb6809eee4c549
@@ -858,7 +858,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:26.x, @types/jest@npm:^26.0.15":
+"@types/jest@npm:26.0.20, @types/jest@npm:26.x":
   version: 26.0.20
   resolution: "@types/jest@npm:26.0.20"
   dependencies:
@@ -882,7 +882,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/luxon@npm:^1.26.0":
+"@types/luxon@npm:1.26.0":
   version: 1.26.0
   resolution: "@types/luxon@npm:1.26.0"
   checksum: e03965e909590344a01b10c0e5265cc90d65ec63d530f59cad72d8a65a752d9a3af45629eeec82ad27f70a36ff15337bbf02995cc80d9ba39677bef7219c2a0d
@@ -896,7 +896,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:^2.5.8":
+"@types/node-fetch@npm:2.5.8":
   version: 2.5.8
   resolution: "@types/node-fetch@npm:2.5.8"
   dependencies:
@@ -915,7 +915,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^14.14.9":
+"@types/node@npm:*, @types/node@npm:14.14.31":
   version: 14.14.31
   resolution: "@types/node@npm:14.14.31"
   checksum: 635dc8a0898a923621e02ca179e17baa39fdfa44f0096fcc1b7046c9b32317e74a99956a7b45ca0e8069874f51f4e7873a418239a318a4b6e7936f6510ac5992
@@ -997,7 +997,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:>=2.25.0, @typescript-eslint/eslint-plugin@npm:^4.15.1":
+"@typescript-eslint/eslint-plugin@npm:4.15.1, @typescript-eslint/eslint-plugin@npm:>=2.25.0":
   version: 4.15.1
   resolution: "@typescript-eslint/eslint-plugin@npm:4.15.1"
   dependencies:
@@ -1035,7 +1035,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:>=2.25.0, @typescript-eslint/parser@npm:^4.8.1":
+"@typescript-eslint/parser@npm:4.15.1, @typescript-eslint/parser@npm:>=2.25.0":
   version: 4.15.1
   resolution: "@typescript-eslint/parser@npm:4.15.1"
   dependencies:
@@ -1097,7 +1097,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/ncc@npm:^0.25.1":
+"@vercel/ncc@npm:0.25.1":
   version: 0.25.1
   resolution: "@vercel/ncc@npm:0.25.1"
   dependencies:
@@ -1191,7 +1191,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ansi-colors@npm:^4.1.1":
+"ansi-colors@npm:4.1.1, ansi-colors@npm:^4.1.1":
   version: 4.1.1
   resolution: "ansi-colors@npm:4.1.1"
   checksum: 50d8dfbce25602caea1b170ecf4c71c4c9c58d2d1e3186fb5712848c0610d05fe60b8bb6a9eaebd9b54f1db3baf6f603e04214cce597cc7799bc9f47fd9a797a
@@ -2450,7 +2450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:>=6.10.1, eslint-config-prettier@npm:^8.0.0":
+"eslint-config-prettier@npm:8.0.0, eslint-config-prettier@npm:>=6.10.1":
   version: 8.0.0
   resolution: "eslint-config-prettier@npm:8.0.0"
   peerDependencies:
@@ -2461,7 +2461,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-node@npm:^0.3.4":
+"eslint-import-resolver-node@npm:0.3.4, eslint-import-resolver-node@npm:^0.3.4":
   version: 0.3.4
   resolution: "eslint-import-resolver-node@npm:0.3.4"
   dependencies:
@@ -2481,7 +2481,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-eslint-comments@npm:>=3.0.1, eslint-plugin-eslint-comments@npm:^3.2.0":
+"eslint-plugin-eslint-comments@npm:3.2.0, eslint-plugin-eslint-comments@npm:>=3.0.1":
   version: 3.2.0
   resolution: "eslint-plugin-eslint-comments@npm:3.2.0"
   dependencies:
@@ -2493,7 +2493,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-github@npm:^4.1.1":
+"eslint-plugin-github@npm:4.1.1":
   version: 4.1.1
   resolution: "eslint-plugin-github@npm:4.1.1"
   dependencies:
@@ -2514,7 +2514,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:>=2.20.1, eslint-plugin-import@npm:^2.22.1":
+"eslint-plugin-import@npm:2.22.1, eslint-plugin-import@npm:>=2.20.1":
   version: 2.22.1
   resolution: "eslint-plugin-import@npm:2.22.1"
   dependencies:
@@ -2537,7 +2537,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^24.1.3":
+"eslint-plugin-jest@npm:24.1.5":
   version: 24.1.5
   resolution: "eslint-plugin-jest@npm:24.1.5"
   dependencies:
@@ -2563,7 +2563,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-simple-import-sort@npm:^7.0.0":
+"eslint-plugin-simple-import-sort@npm:7.0.0":
   version: 7.0.0
   resolution: "eslint-plugin-simple-import-sort@npm:7.0.0"
   peerDependencies:
@@ -2612,7 +2612,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.17.0":
+"eslint@npm:7.20.0":
   version: 7.20.0
   resolution: "eslint@npm:7.20.0"
   dependencies:
@@ -2958,7 +2958,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-xml-parser@npm:^3.18.0":
+"fast-xml-parser@npm:3.18.0":
   version: 3.18.0
   resolution: "fast-xml-parser@npm:3.18.0"
   bin:
@@ -4025,7 +4025,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"jest-circus@npm:^26.6.3":
+"jest-circus@npm:26.6.3":
   version: 26.6.3
   resolution: "jest-circus@npm:26.6.3"
   dependencies:
@@ -4477,7 +4477,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"jest@npm:^26.6.3":
+"jest@npm:26.6.3":
   version: 26.6.3
   resolution: "jest@npm:26.6.3"
   dependencies:
@@ -4497,7 +4497,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:^3.13.1, js-yaml@npm:^3.14.0":
+"js-yaml@npm:3.14.1, js-yaml@npm:^3.13.1":
   version: 3.14.1
   resolution: "js-yaml@npm:3.14.1"
   dependencies:
@@ -4776,7 +4776,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"luxon@npm:^1.26.0":
+"luxon@npm:1.26.0":
   version: 1.26.0
   resolution: "luxon@npm:1.26.0"
   checksum: e12bb8bfdd69707f0f3e57b1b2ff39042c67904bdc437602064519f3eb87d3267497bc56cc0b7611faa40e22019991440a8e8e179d4c6a0440e9f226571fce46
@@ -4987,7 +4987,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"mockttp@npm:^1.2.0":
+"mockttp@npm:1.2.0":
   version: 1.2.0
   resolution: "mockttp@npm:1.2.0"
   dependencies:
@@ -5115,7 +5115,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.1":
+"node-fetch@npm:2.6.1":
   version: 2.6.1
   resolution: "node-fetch@npm:2.6.1"
   checksum: cbb171635e538162b977eac5dfe7a1e07a9a02e991924377a6435502291e2f823d306b95aabc455caebf4a118ccf836868462bc70ccc3095af02bb9da61fda37
@@ -5918,7 +5918,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"reflect-metadata@npm:^0.1.13":
+"reflect-metadata@npm:0.1.13":
   version: 0.1.13
   resolution: "reflect-metadata@npm:0.1.13"
   checksum: 629101e6c8b7e0d3166fa51953f908f45b5c73dbaf1375c4f8c3ed62221b870c951343b9b031d0c49957e7262a88020f41be25731ee85b5d779f12c7cec66005
@@ -6107,6 +6107,17 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"rimraf@npm:3.0.2, rimraf@npm:^3.0.0, rimraf@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "rimraf@npm:3.0.2"
+  dependencies:
+    glob: ^7.1.3
+  bin:
+    rimraf: bin.js
+  checksum: f0de3e445581e64a8a077af476cc30708e659f5779ec2ca2a161556d0792aa318a685923798ae22055b4ecd02b9aff444ef619578f7af53cf8e0e248031e3dee
+  languageName: node
+  linkType: hard
+
 "rimraf@npm:^2.6.3":
   version: 2.7.1
   resolution: "rimraf@npm:2.7.1"
@@ -6115,17 +6126,6 @@ fsevents@^2.1.2:
   bin:
     rimraf: ./bin.js
   checksum: 059efac2838ef917d4d1da1d80e724ad28c120cdf14ca6ed27ca72db2dc70be3e25421cba5947c6ec3d804c1d2bb9a247254653816ee0722bf943ffdd1ae19ef
-  languageName: node
-  linkType: hard
-
-"rimraf@npm:^3.0.0, rimraf@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "rimraf@npm:3.0.2"
-  dependencies:
-    glob: ^7.1.3
-  bin:
-    rimraf: bin.js
-  checksum: f0de3e445581e64a8a077af476cc30708e659f5779ec2ca2a161556d0792aa318a685923798ae22055b4ecd02b9aff444ef619578f7af53cf8e0e248031e3dee
   languageName: node
   linkType: hard
 
@@ -6950,7 +6950,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^26.4.4":
+"ts-jest@npm:26.5.1":
   version: 26.5.1
   resolution: "ts-jest@npm:26.5.1"
   dependencies:
@@ -6974,14 +6974,14 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"ts-nested-error@npm:^1.2.1":
+"ts-nested-error@npm:1.2.1":
   version: 1.2.1
   resolution: "ts-nested-error@npm:1.2.1"
   checksum: ca5e1d70382ad8fe24ef724429a767af086752a8c3ff1a80218216758b96137aff93e2ae41bbfb09f2dd8611ba4cf2ca2d81869b416e90ae92683773ea4f559b
   languageName: node
   linkType: hard
 
-"ts-node@npm:^9.1.1":
+"ts-node@npm:9.1.1":
   version: 9.1.1
   resolution: "ts-node@npm:9.1.1"
   dependencies:
@@ -7094,17 +7094,17 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"type-fest@npm:0.21.1":
+  version: 0.21.1
+  resolution: "type-fest@npm:0.21.1"
+  checksum: c5653b66e12ae5c7053c30ae8361d183a62954449ed2b0e5faea1202875fa5a21113802200ad0a94d97ad108b5795333d5f2d360394f45a5a43a44bec83128db
+  languageName: node
+  linkType: hard
+
 "type-fest@npm:^0.11.0":
   version: 0.11.0
   resolution: "type-fest@npm:0.11.0"
   checksum: 02e5cadf13590a5724cacf8d9133320efd173f6fb1b695fcb29e56551a315bf0f07ca988a780a1999b7b55bb3eaaa7f37223615207236d393af17bba6749dc95
-  languageName: node
-  linkType: hard
-
-"type-fest@npm:^0.21.1":
-  version: 0.21.1
-  resolution: "type-fest@npm:0.21.1"
-  checksum: c5653b66e12ae5c7053c30ae8361d183a62954449ed2b0e5faea1202875fa5a21113802200ad0a94d97ad108b5795333d5f2d360394f45a5a43a44bec83128db
   languageName: node
   linkType: hard
 
@@ -7152,43 +7152,43 @@ fsevents@^2.1.2:
   version: 0.0.0-use.local
   resolution: "typescript-action@workspace:."
   dependencies:
-    "@actions/artifact": ^0.5.0
-    "@actions/core": ^1.2.6
-    "@types/jest": ^26.0.15
-    "@types/luxon": ^1.26.0
-    "@types/node": ^14.14.9
-    "@types/node-fetch": ^2.5.8
-    "@typescript-eslint/eslint-plugin": ^4.15.1
-    "@typescript-eslint/parser": ^4.8.1
-    "@vercel/ncc": ^0.25.1
-    ansi-colors: ^4.1.1
-    eslint: ^7.17.0
-    eslint-config-prettier: ^8.0.0
-    eslint-import-resolver-node: ^0.3.4
-    eslint-plugin-eslint-comments: ^3.2.0
-    eslint-plugin-github: ^4.1.1
-    eslint-plugin-import: ^2.22.1
-    eslint-plugin-jest: ^24.1.3
-    eslint-plugin-simple-import-sort: ^7.0.0
-    fast-xml-parser: ^3.18.0
-    jest: ^26.6.3
-    jest-circus: ^26.6.3
-    js-yaml: ^3.14.0
-    luxon: ^1.26.0
-    mockttp: ^1.2.0
-    node-fetch: ^2.6.1
+    "@actions/artifact": 0.5.0
+    "@actions/core": 1.2.6
+    "@types/jest": 26.0.20
+    "@types/luxon": 1.26.0
+    "@types/node": 14.14.31
+    "@types/node-fetch": 2.5.8
+    "@typescript-eslint/eslint-plugin": 4.15.1
+    "@typescript-eslint/parser": 4.15.1
+    "@vercel/ncc": 0.25.1
+    ansi-colors: 4.1.1
+    eslint: 7.20.0
+    eslint-config-prettier: 8.0.0
+    eslint-import-resolver-node: 0.3.4
+    eslint-plugin-eslint-comments: 3.2.0
+    eslint-plugin-github: 4.1.1
+    eslint-plugin-import: 2.22.1
+    eslint-plugin-jest: 24.1.5
+    eslint-plugin-simple-import-sort: 7.0.0
+    fast-xml-parser: 3.18.0
+    jest: 26.6.3
+    jest-circus: 26.6.3
+    js-yaml: 3.14.1
+    luxon: 1.26.0
+    mockttp: 1.2.0
+    node-fetch: 2.6.1
     prettier: 2.2.1
-    reflect-metadata: ^0.1.13
-    rimraf: ^3.0.2
-    ts-jest: ^26.4.4
-    ts-nested-error: ^1.2.1
-    ts-node: ^9.1.1
-    type-fest: ^0.21.1
-    typescript: ^4.1.3
+    reflect-metadata: 0.1.13
+    rimraf: 3.0.2
+    ts-jest: 26.5.1
+    ts-nested-error: 1.2.1
+    ts-node: 9.1.1
+    type-fest: 0.21.1
+    typescript: 4.1.5
   languageName: unknown
   linkType: soft
 
-typescript@^4.1.3:
+typescript@4.1.5:
   version: 4.1.5
   resolution: "typescript@npm:4.1.5"
   bin:
@@ -7198,7 +7198,7 @@ typescript@^4.1.3:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.1.3#builtin<compat/typescript>":
+"typescript@patch:typescript@4.1.5#builtin<compat/typescript>":
   version: 4.1.5
   resolution: "typescript@patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"
   bin:
