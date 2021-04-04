@@ -882,10 +882,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/luxon@npm:1.26.0":
-  version: 1.26.0
-  resolution: "@types/luxon@npm:1.26.0"
-  checksum: e03965e909590344a01b10c0e5265cc90d65ec63d530f59cad72d8a65a752d9a3af45629eeec82ad27f70a36ff15337bbf02995cc80d9ba39677bef7219c2a0d
+"@types/luxon@npm:1.26.3":
+  version: 1.26.3
+  resolution: "@types/luxon@npm:1.26.3"
+  checksum: d34b3ceaeed2fadd008b5b41357fce7e3a2d6e0a7feb7e6f39dab1d93d77cd30afae3bc1dfb09d9a4dae812a3f80da3ffcaf9b315422e6ae6c2362f6ae8d885d
   languageName: node
   linkType: hard
 
@@ -7155,7 +7155,7 @@ fsevents@^2.1.2:
     "@actions/artifact": 0.5.0
     "@actions/core": 1.2.6
     "@types/jest": 26.0.20
-    "@types/luxon": 1.26.0
+    "@types/luxon": 1.26.3
     "@types/node": 14.14.31
     "@types/node-fetch": 2.5.8
     "@typescript-eslint/eslint-plugin": 4.15.1

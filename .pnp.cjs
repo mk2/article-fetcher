@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@actions/artifact", "npm:0.5.0"],
             ["@actions/core", "npm:1.2.6"],
             ["@types/jest", "npm:26.0.20"],
-            ["@types/luxon", "npm:1.26.0"],
+            ["@types/luxon", "npm:1.26.3"],
             ["@types/node", "npm:14.14.31"],
             ["@types/node-fetch", "npm:2.5.8"],
             ["@typescript-eslint/eslint-plugin", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:4.15.1"],
@@ -1187,10 +1187,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/luxon", [
-        ["npm:1.26.0", {
-          "packageLocation": "./.yarn/cache/@types-luxon-npm-1.26.0-1ccffdd906-e03965e909.zip/node_modules/@types/luxon/",
+        ["npm:1.26.3", {
+          "packageLocation": "./.yarn/cache/@types-luxon-npm-1.26.3-4aa232b726-d34b3ceaee.zip/node_modules/@types/luxon/",
           "packageDependencies": [
-            ["@types/luxon", "npm:1.26.0"]
+            ["@types/luxon", "npm:1.26.3"]
           ],
           "linkType": "HARD",
         }]
@@ -8526,7 +8526,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@actions/artifact", "npm:0.5.0"],
             ["@actions/core", "npm:1.2.6"],
             ["@types/jest", "npm:26.0.20"],
-            ["@types/luxon", "npm:1.26.0"],
+            ["@types/luxon", "npm:1.26.3"],
             ["@types/node", "npm:14.14.31"],
             ["@types/node-fetch", "npm:2.5.8"],
             ["@typescript-eslint/eslint-plugin", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:4.15.1"],
