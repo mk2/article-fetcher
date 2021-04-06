@@ -106,5 +106,3 @@ jobs:
 
 - Node 12.x
 - Yarn v2
-  - 最新の yarn berry が必要です。下記のコマンドでいれてください（2021/2/23 時点）
-  - `yarn set version from sources --branch 2262`
