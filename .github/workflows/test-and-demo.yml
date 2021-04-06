@@ -12,7 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          yarn set version from sources --branch 2262
           yarn install --immutable --immutable-cache
       - run: |
           yarn all
