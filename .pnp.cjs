@@ -68,7 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-jest", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:26.5.1"],
             ["ts-nested-error", "npm:1.2.1"],
             ["ts-node", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:9.1.1"],
-            ["type-fest", "npm:0.21.3"],
+            ["type-fest", "npm:1.0.1"],
             ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"]
           ],
           "linkType": "SOFT",
@@ -8457,13 +8457,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:0.21.3", {
-          "packageLocation": "./.yarn/cache/type-fest-npm-0.21.3-5ff2a9c6fd-bbe5f5c60e.zip/node_modules/type-fest/",
-          "packageDependencies": [
-            ["type-fest", "npm:0.21.3"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:0.6.0", {
           "packageLocation": "./.yarn/cache/type-fest-npm-0.6.0-76b229965b-c77f687caf.zip/node_modules/type-fest/",
           "packageDependencies": [
@@ -8475,6 +8468,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/type-fest-npm-0.8.1-351ad028fe-f8c4b4249f.zip/node_modules/type-fest/",
           "packageDependencies": [
             ["type-fest", "npm:0.8.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/type-fest-npm-1.0.1-9840e12f89-3bd9016114.zip/node_modules/type-fest/",
+          "packageDependencies": [
+            ["type-fest", "npm:1.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -8554,7 +8554,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-jest", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:26.5.1"],
             ["ts-nested-error", "npm:1.2.1"],
             ["ts-node", "virtual:906bfc3217228ef3c6b6e15b118c30ad083e747c3cbed8e83b7a48250b841e07413566a757e20c360be0e5f8f7abd7a9b71c5187e47cf0cca418880f13c9c0c5#npm:9.1.1"],
-            ["type-fest", "npm:0.21.3"],
+            ["type-fest", "npm:1.0.1"],
             ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"]
           ],
           "linkType": "SOFT",
