@@ -922,10 +922,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^10.12.9":
-  version: 10.17.54
-  resolution: "@types/node@npm:10.17.54"
-  checksum: 6f718d5d37f40586228b490b9635a1b44f3990766c75fc5af933858ad2bc6eac7cc5dca2b8a1389e0663542c5cb671d01eb45f847783e53aba0318a9fe11a66b
+"@types/node@npm:^14.14.37":
+  version: 14.14.41
+  resolution: "@types/node@npm:14.14.41"
+  checksum: 37dfb639644c8ee9b9846106834983f590d494b855e74645a4f169ea24199f7559366d25f6e72e83ba940b59eb6370e002bd53963d098d6d9fdf935a37011417
   languageName: node
   linkType: hard
 
@@ -1699,10 +1699,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cacheable-lookup@npm:^5.0.4":
-  version: 5.0.4
-  resolution: "cacheable-lookup@npm:5.0.4"
-  checksum: cb5849f5841e37f007aeaea2516ecf2cb0a9730667694d131331a04413f6c3bf2587391d55003cc2b95ef59085b5f50ac9887a0b7c673fc0c8102bcc69b6d73d
+"cacheable-lookup@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "cacheable-lookup@npm:6.0.0"
+  checksum: e99c54e1759a705710bb0774cbc75f1b2f003f20be745157a7a5aed4c02893e5235e80337939fbfaeede3f8454375d717756a4515f1efbf8999128f685bb1ae2
   languageName: node
   linkType: hard
 
@@ -2340,15 +2340,6 @@ __metadata:
   version: 1.0.2
   resolution: "encodeurl@npm:1.0.2"
   checksum: 6ee5fcbcd245d2a2b6bd6fe36b80f91e31ab46e29192c50af00e8f860c0c2310ebbdaae40257878fdce90b42abcb3526895c7c3a2e229461ed1f0d0b5a020fc8
-  languageName: node
-  linkType: hard
-
-"encoding@npm:^0.1.11":
-  version: 0.1.13
-  resolution: "encoding@npm:0.1.13"
-  dependencies:
-    iconv-lite: ^0.6.2
-  checksum: 282d5696a4916383b0f71a87375505e33ef0be0c3a30939fb559a878b691873d48acc61ee6dcbfacf3e68404ab4462e081bcfd0aa3c9a3f1fabb900306aad77d
   languageName: node
   linkType: hard
 
@@ -2994,12 +2985,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fetch-ponyfill@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "fetch-ponyfill@npm:4.1.0"
+"fetch-ponyfill@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "fetch-ponyfill@npm:7.1.0"
   dependencies:
-    node-fetch: ~1.7.1
-  checksum: addf11196887a31e947e74700d9be5097bfc32535c9bd03d99eb287e8b23b44e44bd6c3749dfcb80920fcfc942a188787b7df5a8d9522d3b2434aac54b9c37ca
+    node-fetch: ~2.6.1
+  checksum: 8c421d113c58b0591ce7e90fb3f13c346255a4266444d9454c9b8831c6de6726200228e86f95b5283c1ab7feb11fd3eec3002b2bc9cec94de4812160905457af
   languageName: node
   linkType: hard
 
@@ -3562,15 +3553,6 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"iconv-lite@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "iconv-lite@npm:0.6.2"
-  dependencies:
-    safer-buffer: ">= 2.1.2 < 3.0.0"
-  checksum: 0785670120f57b5912c6a4391d6a69914906746d259b59de884dc6d324a52a0abde38d5804f67370192fec6878d01e7306de525568abcea70eb41c2bceb9f547
-  languageName: node
-  linkType: hard
-
 "ignore-sync@npm:3.1.0":
   version: 3.1.0
   resolution: "ignore-sync@npm:3.1.0"
@@ -3899,7 +3881,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"is-stream@npm:^1.0.1, is-stream@npm:^1.1.0":
+"is-stream@npm:^1.1.0":
   version: 1.1.0
   resolution: "is-stream@npm:1.1.0"
   checksum: 39843ee9ff68ebda05237199f18831eb6e0e28db7799ee9ddaac5573b0681f18b4dc427afdb7b7ad906db545e4648999c42a1810b277acc8451593ff59da00fa
@@ -5020,28 +5002,28 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"mockttp@npm:1.2.0":
-  version: 1.2.0
-  resolution: "mockttp@npm:1.2.0"
+"mockttp@npm:1.2.2":
+  version: 1.2.2
+  resolution: "mockttp@npm:1.2.2"
   dependencies:
     "@graphql-tools/schema": ^6.0.18
     "@graphql-tools/utils": ^6.0.18
     "@httptoolkit/httpolyglot": ^1.0.0
     "@types/cors": ^2.8.6
     "@types/express": ^4.0.33
-    "@types/node": ^10.12.9
+    "@types/node": ^14.14.37
     "@types/node-forge": ^0.9.1
     base64-arraybuffer: ^0.1.5
     body-parser: ^1.15.2
     brotli: ^1.3.2
-    cacheable-lookup: ^5.0.4
+    cacheable-lookup: ^6.0.0
     common-tags: ^1.8.0
     connect: ^3.7.0
     cors: ^2.8.4
     cors-gate: ^1.1.3
     express: ^4.14.0
     express-graphql: ^0.11.0
-    fetch-ponyfill: ^4.1.0
+    fetch-ponyfill: ^7.1.0
     graphql: ^14.0.2
     graphql-subscriptions: ^1.1.0
     http2-wrapper: ^1.0.0-beta.5.2
@@ -5059,7 +5041,7 @@ fsevents@^2.1.2:
     ws: ^7.3.1
   bin:
     mockttp: dist/standalone/standalone-bin.js
-  checksum: 7f9be424269b7a05e2d59cdaea82552af2df06a66446fb4eae607fb9c42ad9ab9811a7618baa59d2f4b6b1ae6a0672c54a77b1c6ba034ac4583ba639ea1f5c1b
+  checksum: 83947490f3102ba9e48cd40edd0356dc6b85e6685fab40a181399febd06b555ee4523186740dd4254a41e0a09b3f75d9a6f5df181d881ac3d6078cfb492d7a20
   languageName: node
   linkType: hard
 
@@ -5148,20 +5130,10 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.1":
+"node-fetch@npm:2.6.1, node-fetch@npm:~2.6.1":
   version: 2.6.1
   resolution: "node-fetch@npm:2.6.1"
   checksum: cbb171635e538162b977eac5dfe7a1e07a9a02e991924377a6435502291e2f823d306b95aabc455caebf4a118ccf836868462bc70ccc3095af02bb9da61fda37
-  languageName: node
-  linkType: hard
-
-"node-fetch@npm:~1.7.1":
-  version: 1.7.3
-  resolution: "node-fetch@npm:1.7.3"
-  dependencies:
-    encoding: ^0.1.11
-    is-stream: ^1.0.1
-  checksum: d04afb2e328ffb974a5ac4800fe5714d7419243d72f089a6a2383d3b93368c61ae88954a4866c476c0d7f95d7af414c1b9a885e051971061efe4054d526e23ed
   languageName: node
   linkType: hard
 
@@ -6208,7 +6180,7 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"safer-buffer@npm:>= 2.1.2 < 3, safer-buffer@npm:>= 2.1.2 < 3.0.0, safer-buffer@npm:^2.0.2, safer-buffer@npm:^2.1.0, safer-buffer@npm:~2.1.0":
+"safer-buffer@npm:>= 2.1.2 < 3, safer-buffer@npm:^2.0.2, safer-buffer@npm:^2.1.0, safer-buffer@npm:~2.1.0":
   version: 2.1.2
   resolution: "safer-buffer@npm:2.1.2"
   checksum: 549ba83f5b314b59898efe3422120ce1ca7987a6eae5925a5fa5db930dc414d4a9dde0a5594f89638cd6ea60b6840ea961872908933ac2428d1726489db46fa5
@@ -7216,7 +7188,7 @@ fsevents@^2.1.2:
     jest-circus: 26.6.3
     js-yaml: 3.14.1
     luxon: 1.26.0
-    mockttp: 1.2.0
+    mockttp: 1.2.2
     node-fetch: 2.6.1
     prettier: 2.2.1
     reflect-metadata: 0.1.13
