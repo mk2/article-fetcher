@@ -31,14 +31,14 @@
     "@actions/core": "1.2.6",
     "ansi-colors": "4.1.1",
     "fast-xml-parser": "3.18.0",
-    "luxon": "1.26.0",
+    "luxon": "1.28.0",
     "node-fetch": "2.6.1",
     "reflect-metadata": "0.1.13",
     "ts-nested-error": "1.2.1"
   },
   "devDependencies": {
     "@types/jest": "26.0.20",
-    "@types/luxon": "1.26.3",
+    "@types/luxon": "1.27.1",
     "@types/node": "14.14.31",
     "@types/node-fetch": "2.5.8",
     "@typescript-eslint/eslint-plugin": "4.15.1",
