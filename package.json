@@ -37,7 +37,7 @@
     "ts-nested-error": "1.2.1"
   },
   "devDependencies": {
-    "@types/jest": "26.0.20",
+    "@types/jest": "26.0.24",
     "@types/luxon": "1.26.3",
     "@types/node": "14.14.31",
     "@types/node-fetch": "2.5.8",
