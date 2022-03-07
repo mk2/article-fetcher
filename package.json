@@ -30,7 +30,7 @@
     "@actions/artifact": "0.5.0",
     "@actions/core": "1.2.6",
     "ansi-colors": "4.1.1",
-    "fast-xml-parser": "3.18.0",
+    "fast-xml-parser": "3.21.1",
     "luxon": "1.26.0",
     "node-fetch": "2.6.1",
     "reflect-metadata": "0.1.13",

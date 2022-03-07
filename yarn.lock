@@ -2967,12 +2967,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-xml-parser@npm:3.18.0":
-  version: 3.18.0
-  resolution: "fast-xml-parser@npm:3.18.0"
+"fast-xml-parser@npm:3.21.1":
+  version: 3.21.1
+  resolution: "fast-xml-parser@npm:3.21.1"
+  dependencies:
+    strnum: ^1.0.4
   bin:
     xml2js: cli.js
-  checksum: 2da80052dcdb34efd08a9b5a18593a008001f7c43bc8bde7a6496992103ed23ff3a1ce5a617daace6cc708f55e8fa96597fdb8e66f49d1dc121b73892093dca1
+  checksum: 8de6a5803ba44b206b8733b22ce0d3e8433203e3e6f0328a1a130f952ec22e32cda9a5fb8f4df2fbee32552ff7eb973f56135352c98533e3d66d6dd2a1304516
   languageName: node
   linkType: hard
 
@@ -6756,6 +6758,13 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"strnum@npm:^1.0.4":
+  version: 1.0.5
+  resolution: "strnum@npm:1.0.5"
+  checksum: 8b73ef3de223bd07c662d1983fbadbfc8faedbbd75322e4d03a334e48ca5ca405d960a106bf7163f9f528e831b8cb173b9c9896bc37d6f97f8c78f8dd93ad7a2
+  languageName: node
+  linkType: hard
+
 "subscriptions-transport-ws@npm:^0.9.4":
   version: 0.9.18
   resolution: "subscriptions-transport-ws@npm:0.9.18"
@@ -7210,7 +7219,7 @@ fsevents@^2.1.2:
     eslint-plugin-import: 2.22.1
     eslint-plugin-jest: 24.1.5
     eslint-plugin-simple-import-sort: 7.0.0
-    fast-xml-parser: 3.18.0
+    fast-xml-parser: 3.21.1
     ignore-sync: 3.1.0
     jest: 26.6.3
     jest-circus: 26.6.3
