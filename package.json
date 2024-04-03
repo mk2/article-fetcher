@@ -32,7 +32,7 @@
     "ansi-colors": "4.1.1",
     "fast-xml-parser": "3.18.0",
     "luxon": "1.26.0",
-    "node-fetch": "2.6.1",
+    "node-fetch": "2.6.7",
     "reflect-metadata": "0.1.13",
     "ts-nested-error": "1.2.1"
   },
